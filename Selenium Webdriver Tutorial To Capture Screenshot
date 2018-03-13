@@ -1,0 +1,8 @@
+@Test
+ public void test () throws InterruptedException, IOException 
+ { 
+  //Capture entire page screenshot and then store it to destination drive
+  File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+  FileUtils.copyFile(screenshot, new File("D:\\screenshot.jpg"));
+  System.out.print("Screenshot is captured and stored in your D: Drive");
+ }
