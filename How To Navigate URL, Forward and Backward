@@ -1,0 +1,11 @@
+@Test
+ public void test () throws InterruptedException 
+ { 
+  driver.navigate().to("http://only-testing-blog.blogspot.in/2014/01/textbox.html");
+
+  //To navigate back (Same as clicking on browser back button)
+  driver.navigate().back();
+
+  //To navigate forward (Same as clicking on browser forward button)
+  driver.navigate().forward();
+ }
